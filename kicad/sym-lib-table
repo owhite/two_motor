@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "two_motor_driver-rescue")(type "KiCad")(uri "${KIPRJMOD}/two_motor_driver-rescue.kicad_sym")(options "")(descr ""))
+)
