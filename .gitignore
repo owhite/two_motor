@@ -1,0 +1,69 @@
+# ───────────────────────────────
+# KiCad backup & autosave files
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_mod-bak
+*.kicad_wks-bak
+*-backups/
+*.autosave.kicad_sch
+*.autosave.kicad_pcb
+*.bak~
+*.~*
+
+# KiCad temporary & cache files
+*.tmp
+*.swp
+__pycache__/
+.cache/
+backup/
+fp-info-cache
+sym-lib-table-bak
+*-cache.lib
+*-rescue.lib
+*.kicad_prl
+
+# KiCad output / build / export files
+*.gbr
+*.gtp
+*.gto
+*.gbl
+*.gbo
+*.gbs
+*.gml
+*.drl
+*.pos
+*.zip
+*.pdf
+
+# ───────────────────────────────
+# PlatformIO build and dependencies
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# PlatformIO editor configs
+.vscode/
+.idea/
+.clangd/
+*.code-workspace
+
+# PlatformIO binaries and build outputs
+*.elf
+*.bin
+*.hex
+*.exe
+
+# ───────────────────────────────
+# Python virtual environments (if used)
+.venv/
+env/
+venv/
+
+# Logs and temporary files
+*.log
+
+# ───────────────────────────────
+# OS-specific
+.DS_Store
+Thumbs.db
