@@ -1,0 +1,19 @@
+Import("env")
+import os
+
+def after_build(source, target, env):
+    firmware_path = str(target[0])
+    print(f"\n\n=== Uploading {firmware_path} using Arduino dfu-util ===\n")
+    cmd = (
+        '/Users/owhite/Library/Arduino15/packages/arduino/tools/dfu-util/0.11.0-arduino5/dfu-util '
+        '--device 0x2341:0x0070 '
+        f'-D "{firmware_path}" -Q'
+    )
+    print(f"Running: {cmd}")
+    exit_code = os.system(cmd)
+    if exit_code != 0:
+        print(f"Upload failed with exit code {exit_code}")
+    else:
+        print("Upload complete ✅")
+
+env.AddPostAction("$BUILD_DIR/${PROGNAME}.bin", after_build)
